@@ -1,0 +1,17 @@
+networks:
+  events_face:
+
+services:
+  events_face_db:
+    container_name: events_face_db
+    image: postgres:14.0-alpine
+    restart: always
+    volumes:
+      - events_face_db_data:/var/lib/postgresql/data/
+    env_file:
+      - .env
+    ports:
+      - 5432:5432
+
+volumes:
+  events_face_db_data:

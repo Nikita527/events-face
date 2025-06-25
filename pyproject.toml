@@ -9,6 +9,7 @@ dependencies = [
     "djangorestframework>=3.16.0",
     "djangorestframework-simplejwt[crypto]>=5.5.0",
     "flake8>=7.2.0",
+    "psycopg2-binary>=2.9.10",
     "python-dotenv>=1.1.0",
     "ruff>=0.12.0",
 ]
